@@ -1,2 +1,2 @@
 # leetcode
-This is my Leetcode repository.
+Welcome to my Leetcode repository.
