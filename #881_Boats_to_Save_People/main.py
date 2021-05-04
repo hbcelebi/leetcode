@@ -15,26 +15,26 @@ class Solution:
         people.sort()
         
         # initialize the indexes
-        left = 0
-        right = len(people)-1
+        left_idx = 0
+        right_idx = len(people)-1
         
         # initiliaze the number of boats
         boats_number = 0
         
         # in a loop, match one person from left with someone on the right
-        while(left <= right):
+        while(left_idx <= right_idx):
             # the indexes are met, we need to break the loop 
-            if(left == right):
+            if(left_idx == right_idx):
                 boats_number += 1
                 break
             # if one from right and one from left are less htna the threshold
-            if(people[left] + people[right] <= limit):
-                left += 1
-                right -= 1
+            if(people[left_idx] + people[right_idx] <= limit):
+                left_idx += 1
+                right_idx -= 1
                 boats_number += 1
             # else, only carry a heavy man
             else:
-                right -= 1
+                right_idx -= 1
                 boats_number += 1
         # return the totla number of boats
         return boats_number
