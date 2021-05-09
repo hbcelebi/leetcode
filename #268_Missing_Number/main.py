@@ -32,7 +32,7 @@ class Solution(object):
         return left_idx
 
 """
-Just hit to my mind :) There is a faster solution to this porblem: 
+Just came to my mind :) There is a faster solution to this porblem: 
     I can calculate the expected sum, which is n*(n+1)*/2
     and the difference between the actual sum of the array and expected sum is the missing value
 class Solution(object):
