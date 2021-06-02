@@ -55,3 +55,6 @@ s.put(3, 3000)
 print(s.get(1))
 s.put(4, 4000)
 print(s.get(2))
+
+
+
